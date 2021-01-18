@@ -1,0 +1,182 @@
+https://codepen.io/t2ylorgang/pen/gOwqLZO
+
+    1. What is Semantic HTML?
+Semantic html is HTML that's content is clearly described to the browser and developer. It's meaning is clearly understood with the element's name. For example, a <img> element is semantic becuse its meaning is clearly understood by the browser and developer. We know this will be an image and its content will be an image. Where as with a <div>, the name "div" doesn't clearly describe anything about its content.
+
+    2. What is HTML used for?
+HTML is used for the "bare bones" or "foundation" of a website. HTML is the baseline content of a website that includes text, headers, images, links, tables, forms, divs, sections. It is the meat of the website.
+
+    3. What is an attribute and where do we put it?
+An HTML attribute is a piece of additonal information atttached to a specific html element. Attributes are always specified in the start tag. For example, with this <a> tag here: <a href="https://www.w3schools.com">Visit W3Schools</a> the "href" attribute comes after the <a> element and provides the additional and necessaary information for the <a> element; in this case, the link.
+
+    4. What is the h1 tag used for? How many times should I use it on a     page?
+The <h1> tag is used for the main title of the web page or important content. You should only use it once per page unless it is logical to do more.
+
+    5. Name two tags that have required attributes
+<input>
+<select>
+
+    6. What do we put in the head of our HTML document? 
+Metadata "data about data"
+<title> (required in every HTML document)
+<style>
+<base>
+<link>
+<meta>
+<script>
+<noscript>
+
+    7. What is an id?
+An id is an html attribute that is used to specify a unique id for an html element. You can only use one ID for an html element with the same name in an html document. It gives a specific element it's own unique name and allows you to be very accurate and only manipulate that one specific element you give the id name to.
+
+    8. What elements can I add an id to?
+ID attributes can be used by all HTML tags
+
+    9. How many times can I use the same id on a page? 
+ONCE!!!
+
+    10. What is a class?
+A class is an html attribute that specifies a "class" for an HTML element or elements. Unlike ID, more than one element can have a class with the same name. This allows us to style multiple elements the same way at the same time. A developer can change all the text color for <p> tags with the class="fun" for example.
+
+    11. What elements can I add a class to?
+You can add a class to any HTML element. 
+
+    12. How many times can I use the same class on a page?
+As many times as you please. 
+
+    13. How do I get my link to open in a new tab?
+Be sure to include a "target" attribute after the "href" attribute in the <a> tag and set the value to "_blank"
+
+    14. What is the alt attribute in the image tag used for? 
+This is used for the alt text. This text is what screen readers read to people who are unable to see what is on the web page. This text is also useful to set for SEO purposes; web crawlers will analyze the alt text on your web page.
+
+    15. How do I reference an id?
+In CSS; you reference an ID using a hash tag #; for example: #holiday-message {
+color: pink;
+}
+
+    16. What is the difference between a section and a div
+The section tag defines sections in a document like chapters, headers, footers whereas div tag defines a division in an HTML doc. Section is more organizational and div is more construction and application based.
+
+    17. What is CSS used for?
+CSS is used for styling the elements in your web page. It is like the "paint" or "decorations" for your website.
+
+    18. How do we select an element? Example - every h2 on the page
+In the css file to select all h2 elements on the page we would simply write h2 and then use curly braces to insert our styles we want for every h2 element on the page.
+
+h2 {
+font-size: 36px;
+}
+
+This code above would change every h2 to font size 36px.
+
+    19. What is the difference between a class and an id? - Give me an      example of when I might use each one
+A class is for when you want to style multiple elements at once from one place in the css file and an id is when you want to select one specific html element to style. For example you could use class to add a border to all <p> tags on the web page and you could use ID to pick one specific <p> tag that you did NOT want to have a border on.
+
+    20. How do we select classes in CSS?
+You use a decimal. For example:
+
+.news-headings {
+color: blue;
+}
+
+    21. How do we select a p element with a single class of “human””?
+.human {
+
+}
+
+    22. What is a parent child selector? When would this be useful?
+A parent child selector is a selector that allows you to grab all the elements that are a direct child of another element to style them. This would be useful if you only wanted to style the <p> tags in a specific div. You could style them all without having to add a class name to each <p> tag within that div.
+
+    23. How do you select all links within a div with the class of sidebar?
+.sidebar a {
+
+}
+
+    24. What is a pseudo selector?
+A psuedo selector is a keyword that is added to a selector that specifies a special state of the selected element(s). It is a selector that allows you to style an element after it has gone through some change from the user. For example, an <h1> tag when a user hovers their mouse over it.
+
+h1:hover {
+  color: blue;
+}
+
+    25. What do we use the change the spacing between lines?
+CSS line-height property
+
+    26. What do we use to change the spacing between letters?
+CSS letter-spacing
+
+    27. What do we use to to change everything to CAPITALS? lowercase?      Capitalize?
+CSS text-transform: uppercase;
+CSS text-transform: lowercase;
+CSS text-transform: capitalize;
+
+    28. How do I add a 1px border around my div that is dotted and         black?
+#mydiv {
+  border: 1px dotted black;
+}
+
+    29. How do I select everything on the page? 
+body {
+
+}
+
+    30. How do I write a comment in CSS?
+/* This is how you write a comment in CSS */
+
+    31. How do I find out what file I am in, when I am using the          command line? 
+pwd (print working directory)
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+dir
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+del filename
+BECAUSE you cannot undo this no take backsies on this guy.
+
+    34. Why should I use version control? 
+It helps you to stay organized, keep track of changes, hold people accountable, and avoid editing a "master" document unintentionally.
+
+    35. How often should I commit to github?
+Often. I would figure after each section of your project is complete or after major changes to a file. For example, after you are finished stlying the home page of a wesbite; that is probably a good time to commit changes to githhub.
+
+    36. What is the command we would use to push our repo up to github?
+git push origin "name of branch: could be master, or Taylor-Olson, or Pizza..... etc." 
+
+    37. Walk me through Lambda's git flow.
+Go to github repository for project.
+Fork repository.
+Copy url to clipboard for cloning.
+open gitbash
+git clone url
+cd into correct file
+git checkout -b Taylor-Olson (make new branch so you are not messing with master branch)
+git status
+git add .
+git status (check to see its green)
+git commit -m "commit-one of many"
+git push origin Taylor-Olson
+go to github and make sure changes were pushed to repository
+open pull request if necessary and add needed collaberators; get approved to merge, etc.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block         element?
+Block level elements will ALWAYS create a new line on the page. Inline elements will appear one after the other on the page on the same line.
+
+    2. What happens when an element is positioned absolutely? 
+The element is removed from the normal document flow and is given no space on the page layout. It is just placed reletive to the intiial containing block. It uses top, right, bottom, and left to determine its final position on the page.
+
+    3. How do I make an element take up only the amount of space it       needs but also have the ability to give it a width? 
+You must use display inline-block
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+<div> <h1> <p>
+<a> <img>
+<button>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+All html elements have an imaginary box around them. The different sections of this box around the HTML element are margin, border, and padding (outside-in); with the content as the warm delicious center.  Margin affects the space on the very outside of this box, just inside the margin you can add and edit the border, inside of the border we can add space between the border and the content using padding. We can use min width and max width to make elements respect the width we have given them. 
+
+   --> 
